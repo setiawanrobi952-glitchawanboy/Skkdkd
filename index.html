@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usaha Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('produk')">Produk</a>
+    <a onclick="showPage('kontak')">Kontak</a>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page">
+    <h1>Usaha Digital</h1>
+    <p>Kami menyediakan produk digital berkualitas untuk pelajar dan umum.</p>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page" style="display:none;">
+    <h2>Nama Usaha: Digital Smart</h2>
+    <p><b>Latar Belakang:</b> Membantu pelajar berkembang di era digital.</p>
+    <p><b>Visi:</b> Menjadi platform edukasi terbaik</p>
+    <p><b>Misi:</b></p>
+    <ul>
+        <li>Menyediakan produk berkualitas</li>
+        <li>Membantu belajar lebih mudah</li>
+    </ul>
+</div>
+
+<!-- PRODUK -->
+<div id="produk" class="page" style="display:none;">
+    <h2>Produk Kami</h2>
+
+    <div class="card">
+        <h3>Ebook Belajar</h3>
+        <p>Panduan belajar efektif</p>
+        <b>Rp50.000</b>
+    </div>
+
+    <div class="card">
+        <h3>Template CV</h3>
+        <p>Desain profesional</p>
+        <b>Rp30.000</b>
+    </div>
+
+    <div class="card">
+        <h3>Kursus Coding</h3>
+        <p>Belajar dari nol</p>
+        <b>Rp100.000</b>
+    </div>
+</div>
+
+<!-- KONTAK -->
+<div id="kontak" class="page" style="display:none;">
+    <h2>Kontak</h2>
+
+    <form onsubmit="kirimData(event)">
+        <input type="text" id="nama" placeholder="Nama" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <div id="hasil"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
